@@ -39,3 +39,13 @@ var pickRandomWord = function (words) {
 var randomWords = ['Svin', 'Makaka', 'Pig', 'Panda'];
 pickRandomWord(randomWords);
 
+//I write a phrase generator in a cool way (пишу генератор фраз крутішим способом)
+generateRandomGood = function () {
+	var GoodWords = ['tasty', 'majestic', 'delicious', 'disgusting'];
+	var countries = ['Mexican', 'Italian', 'Englih', 'American', 'Japan'];
+	var meals = ['Pizza', 'Burger' , 'Tea', 'Fish', 'Burito', 'Pidcherevina']
+	//robim sentence
+	var randomSentence = 'My dear geast, I want to advise you this ' + pickRandomWord(GoodWords) + ' ' + pickRandomWord(countries) + ' ' + pickRandomWord(meals) + '!';
+	return randomSentence;
+};
+generateRandomGood();
