@@ -24,5 +24,18 @@ var blabla = function (Svin, Makaka) {
 	console.log('My second argument was ' + Makaka);
 }
 
+//return the value (повертаю значення)
+var multiply = function (number) {
+	return number * 3
+};
+//then enter the desired digit (number) in parentheses (потім вводимо в дужках потрібну цифру(число))
+multiply(5) + multiply(2);
+multiply( multiply(4) );
 
+//simplify the code (спрощуємо код)
+var pickRandomWord = function (words) {
+	return words[Math.floor(Math.random() * words.length)];
+};
+var randomWords = ['Svin', 'Makaka', 'Pig', 'Panda'];
+pickRandomWord(randomWords);
 
