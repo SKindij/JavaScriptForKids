@@ -49,3 +49,22 @@ generateRandomGood = function () {
 	return randomSentence;
 };
 generateRandomGood();
+
+var fourthLetter = function (name) {
+	if (name.length < 4) {
+		return;
+	}
+	return 'The fourth letter of your name is ' + name[3] + '.';
+};
+
+//we distribute prizes (розподіляємо призові місця)
+var medalForScore = function (score) {
+	if (score < 3) {
+		return 'Bronze Pig';
+	}
+	if (score < 7) {
+		return 'Silver Pig';
+	}
+	return 'Golden Pig';
+};
+
