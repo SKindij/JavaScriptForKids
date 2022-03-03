@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I play with DOMik</title>
+</head>
+
+<body>
+    <h1 id="main-heading">Daddy pig (Тато свин)</h1>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+//according to ID, we change the name of Daddy Pig (по айді міняємо назву тата свина)
+    $("#main-heading").text("My friends");
+
+    var friends = ["Vladosik (Владосік)", "Ludwin (Людвін)", "Andrew (Андрій)"];
+//here everything is already clear (тут вже все зрозуміло)
+    for (var i = 0; i < friends.length; i++) {
+      $("body").append("<p>" + friends[i] + "</p>");
+    }
+
+    $("p").append("stinks (воняє)!");
+    </script>
+   </body>
+</html>
