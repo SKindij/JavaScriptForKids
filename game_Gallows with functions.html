@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hangman HTML page</title>
+</head>
+<body>
+    <h1>whats up bro?</h1>
+	<p>> роблю гру шибениця</p>
+	<h2>javascript is awesome</h2>
+	
+	<script>
+  //створюємо масив зі слів
+var words = ["свин", "університет", "матуся", "макака", "термінатор", "школа", "тигр", "президент"];
+  //обираємо випадкове слово
+var word = words[Math.floor(Math.random() * words.length)];
+  //встановлюємо масив відповідей
+var answerArray = [];
+for (var i = 0; i < word.length; i++) {
+ answerArray[i] = "_";
+ }
+ 
+ var remainingLetters = word.length;
+ var guesses = 20;
+    //ігровий цикл
+ while (remainingLetters > 0 && guesses > 0) {
+ alert(answerArray.join(" "));
+   //отримуємо варіанти букв від гравця
+ var guess = prompt('Вгадай букву, або натисни Cancel, щоб зупинити гру');
+  if (guess === null) { //виходимо із цього циклу
+  break;
+  } else if (guess.length !== 1) {
+   alert('ТИ НЕ БАЧИШ ЩО ТРЕБА ОДНУ БУКВУ ВВОДИТИ?');
+  } else {
+  guesses--;
+  guess = guess.toLowerCase();
+   //update the game with the guess
+ for (var j = 0; j < word.length; j++) {
+   //перевіряємо чи вже вводили подібну букву
+   var letterWasEntered = answerArray[j] === guess;
+   if (letterWasEntered) {
+     alert("йой, така буква вже була");
+	break; 
+	//якщо букву гравець угадав, то підставляємо її у пусте поле
+ } if (word[j] === guess && answerArray[j] === "_") {
+    answerArray[j] = guess;
+	remainingLetters--;
+	}
+   }
+  }
+}
+  //показуємо результат і повідомлення для гравця
+alert(answerArray.join(" "));
+
+if (guesses > 0) {
+alert('ТИ молодець! Правильне слово було ' + word);
+} else {
+ alert("трішечки не пощастило, таке буває");
+ }
+ 
+ </script>
+		
+</body>
+</html>
