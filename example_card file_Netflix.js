@@ -12,14 +12,14 @@ releaseDate: 2019, seasons: 5, genre: ["фентезі", "комедія", "де
 };
 
 //if we want to get info (якщо бажаємо отримати інфо)
-var Witcher = NetflixsMovies["Відьмак"];
+var Witcher = NetflixsMovies["The Witcher (Відьмак)"];
 Witcher.genre
 
-//коли треба добавити новий фільм
+//when you need to add a new movie (коли треба добавити новий фільм)
 var Discovery = {
 releaseDate: 2019, seasons: 3, genre: ["фантастика", "пригоди", "космос"]
 };
-NetflixsMovies["Дискавері"] = Discovery;
+NetflixsMovies["Discovery (Дискавері)"] = Discovery;
 
-//скласти перелік усіх фільмів
+//make a list of all movies (скласти перелік усіх фільмів)
 Object.keys(NetflixsMovies);
