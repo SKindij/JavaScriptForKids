@@ -5,15 +5,15 @@
 </head>
 <body>
     <h1>whats up bro?</h1>
-	<p>> роблю гру шибениця</p>
+	<p>>I'm making a gallows game (роблю гру шибениця)</p>
 	<h2>javascript is awesome</h2>
 	
 	<script>
-  //створюємо масив зі слів
+  //create an array of words (створюємо масив зі слів)
 var words = ["свин", "університет", "матуся", "макака", "термінатор", "школа", "тигр", "президент"];
-  //обираємо випадкове слово
+  //choose a random word (обираємо випадкове слово)
 var word = words[Math.floor(Math.random() * words.length)];
-  //встановлюємо масив відповідей
+  //set the array of answers (встановлюємо масив відповідей)
 var answerArray = [];
 for (var i = 0; i < word.length; i++) {
  answerArray[i] = "_";
@@ -24,23 +24,23 @@ for (var i = 0; i < word.length; i++) {
     //ігровий цикл
  while (remainingLetters > 0 && guesses > 0) {
  alert(answerArray.join(" "));
-   //отримуємо варіанти букв від гравця
+   //we get variants of letters from the player (отримуємо варіанти букв від гравця)
  var guess = prompt('Вгадай букву, або натисни Cancel, щоб зупинити гру');
-  if (guess === null) { //виходимо із цього циклу
+  if (guess === null) { //we proceed from this cycle (виходимо із цього циклу)
   break;
   } else if (guess.length !== 1) {
-   alert('ТИ НЕ БАЧИШ ЩО ТРЕБА ОДНУ БУКВУ ВВОДИТИ?');
+   alert('YOU DO NOT SEE THAT ONE LETTER SHOULD BE ENTERED (ТИ НЕ БАЧИШ ЩО ТРЕБА ОДНУ БУКВУ ВВОДИТИ?)');
   } else {
   guesses--;
   guess = guess.toLowerCase();
    //update the game with the guess
  for (var j = 0; j < word.length; j++) {
-   //перевіряємо чи вже вводили подібну букву
+   //check if you have already entered a similar letter (перевіряємо чи вже вводили подібну букву)
    var letterWasEntered = answerArray[j] === guess;
    if (letterWasEntered) {
-     alert("йой, така буква вже була");
+     alert("oh, such a letter already was (йой, така буква вже була)");
 	break; 
-	//якщо букву гравець угадав, то підставляємо її у пусте поле
+	//if the player guessed the letter, we substitute it in an empty field (якщо букву гравець угадав, то підставляємо її у пусте поле)
  } if (word[j] === guess && answerArray[j] === "_") {
     answerArray[j] = guess;
 	remainingLetters--;
@@ -48,13 +48,13 @@ for (var i = 0; i < word.length; i++) {
    }
   }
 }
-  //показуємо результат і повідомлення для гравця
+  //show the result and message for the player (показуємо результат і повідомлення для гравця)
 alert(answerArray.join(" "));
 
 if (guesses > 0) {
-alert('ТИ молодець! Правильне слово було ' + word);
+alert('You are good! The right word was (ТИ молодець! Правильне слово було) ' + word);
 } else {
- alert("трішечки не пощастило, таке буває");
+ alert("a little unlucky, it happens (трішечки не пощастило, таке буває)");
  }
  
  </script>
