@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>I play with DOM</title>
+</head>
+
+<body>
+  <h4>New HomeWork №3!</h4>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  
+<h1>And who do we have here? (А хто це у нас тут є?)</h1>
+
+    <script>
+ 
+ var family = ["Daddy Cool-pig (Татко Класний-свин) ", "Mother Princess Piggy(Матуся-принцеса Хрюшка) ", "son of a cool kid Pig(син крутий пацик Свин) "];
+
+    for (var i = 0; i < family.length; i++) {
+      $("body").append("<p>" + family[i] + "</p>");
+      $("p").hide().delay((i + 1) * 3000).fadeIn(2500);
+    }
+
+    $("p").append(" in the family (у родині)!");
+ 
+ 
+ </script>
+   </body>
+</html>
