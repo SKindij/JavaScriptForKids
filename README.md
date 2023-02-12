@@ -23,8 +23,20 @@ ___
 > pig farm (_studying of arrays_)
 > > file: page-53_65-my.js
 
+> random selection of array elements
+> > file: page-72_75-my.js
+
+> in general, arrays work identically to objects
+> > file: page-77_87-my.js
+
+> proper HTML page
+> > file: page-100-my.html
+
+> favourite websites you need to watch.
+> > ffile: page-108-my.html
 
 
-
+> Testing the greeting.
+> > ffile: page-116-my.html
 
 
