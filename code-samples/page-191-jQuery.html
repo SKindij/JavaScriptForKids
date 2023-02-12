@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery methods.hide() & .show()</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>		
+  <script>
+	$( document ).ready(function(){
+	  $( ".hide" ).click(function(){ //set the function when clicking an element with class hide 
+	    $( "p" ).hide(); //hide all the elements <p>
+	  });
+	  $( ".show" ).click(function(){ // set the function when clicking an element with class show 
+	    $( "p" ).show(); //we return all elements  <p>
+	  });
+	});
+  </script>
+</head>
+	
+<body>
+	  <h1>magic library jQuery</h1> 
+		<button class = "hide">hide the piglets</button>
+		<button class = "show">show the piglets</button>
+	<h2>merry pig family</h2> 
+		<p><strong>daddy pig</strong></p>
+		<p><em>son of a pig</em></p>
+		<p>mother piglet</p>
+</body>
+</html>
