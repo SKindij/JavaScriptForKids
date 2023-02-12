@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I play with DOMik</title>
+</head>
+
+<body>
+    <h1 id="main-heading">Daddy pig!</h1>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script>
+  //according to ID, we change the name of Daddy Pig
+    $("#main-heading").text("My friends");
+
+    let friends = ["Vladosik", "Ludwin", "Andrew"];
+    //here everything is already clear
+    for (let i = 0; i < friends.length; i++) {
+      $("body").append("<p>" + friends[i] + "</p>");
+    }
+
+    $("p").append("stinks!");
+  </script>
+ </body>
+</html>
