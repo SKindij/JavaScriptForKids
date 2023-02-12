@@ -1,22 +1,21 @@
 //pig description
-var svin = { 'colour': 'rose', 'name': "Tatko", 'weight': 101};
-
+let svin = { 'colour': 'rose', 'name': "Tatko", 'weight': 101};
 svin.name;
 
 //in general, arrays work identically to objects
-var cat = {};
+let cat = {};
 cat["legs"] = 3;
 cat["name"] = "Pushok";
 cat["colour"] = "Grey";
 
 //we can also create key objects as follows:
-var dog = {};
+let dog = {};
 dog.legs = 3;
 dog.name = 'Sharik';
 dog.tail = 'really long';
 
 //we can also create arrays of objects:
- var animals = [svin, cat, dog];
+ let animals = [svin, cat, dog];
  
  animals[2]; //so does the query for a specific key
  
