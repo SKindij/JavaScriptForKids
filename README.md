@@ -33,10 +33,35 @@ ___
 > > file: page-100-my.html
 
 > favourite websites you need to watch.
-> > ffile: page-108-my.html
+> > file: page-108-my.html
 
 
 > Testing the greeting.
-> > ffile: page-116-my.html
+> > file: page-116-my.html
+
+> mathematical counter
+> > file: page-128-my.html
+
+> website cool animals
+> > file: page-129-my.html
+
+> hackers HTML page
+> > file: page-130-my.html
+
+> HTML: prompt **&** confirm **&**  alert
+> > file: page-137_139-my.html
+
+> deal with functions **&** phrase generator in a cool way 
+> > file: page-160_170-my.js
+
+> DOM with jquery.com
+> > file: page-180-my.html
+
+> play with DOM
+> > file: page-190-my.html
+
+> methods.hide() & .show()
+> > file: page-191-jQuery.html
+
 
 
