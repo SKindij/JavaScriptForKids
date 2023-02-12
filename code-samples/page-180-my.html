@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trying DOMік</title>
+</head>
+
+<body>
+<h1 id='main-heading'>Hello world!</h1>
+<script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+<script>
+  //just DOM is harder to spell 
+  let newGolovniyText = prompt('Please enter a new value:');
+  //$ - it's ID, the text is the text
+  $('#main-heading').text(newGolovniyText);
+  $('body').append('<p>This is a new paragraph</>');
+    for (let i = 0; i < 3; i++) {
+      let hobby = prompt('Tell us about one of your favorite hobbies');
+      $('body').append('<p>' + hobby + '</p>');
+    }
+</script>
+</body>
+</html>
