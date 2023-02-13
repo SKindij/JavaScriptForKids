@@ -11,18 +11,18 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   
-<h1>And who do we have here? (А хто це у нас тут є?)</h1>
+<h1>And who do we have here??</h1>
 
     <script>
  
- var family = ["Daddy Cool-pig (Татко Класний-свин) ", "Mother Princess Piggy(Матуся-принцеса Хрюшка) ", "son of a cool kid Pig(син крутий пацик Свин) "];
+ let family = ["Daddy Cool-pig ", "Mother Princess ", "son of a cool kid Pig "];
 
-    for (var i = 0; i < family.length; i++) {
+    for (let i = 0; i < family.length; i++) {
       $("body").append("<p>" + family[i] + "</p>");
       $("p").hide().delay((i + 1) * 3000).fadeIn(2500);
     }
 
-    $("p").append(" in the family (у родині)!");
+    $("p").append(" in the family!");
  
  
  </script>
