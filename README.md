@@ -63,5 +63,12 @@ ___
 > methods.hide() & .show()
 > > file: page-191-jQuery.html
 
+> jquery >> fadeOut & fadeIn
+> > file: page 192 jQuery.html
+
+> jquery: append
+> > file: page-193 -jQuery.html
+
+
 
 
